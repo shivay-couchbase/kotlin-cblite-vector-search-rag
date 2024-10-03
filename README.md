@@ -1,4 +1,4 @@
-## Setup
+## Setup for the Project
 
 1. Clone the `main` branch, 
 
@@ -13,7 +13,7 @@ the key and paste it in `local.properties` present in the root directory of the 
 geminiKey="AIza[API_KEY_HERE]"
 ```
 
-Perform a Gradle sync, and run the application. 
+Perform a Gradle sync, and run the RAG application. 
 
 
 
