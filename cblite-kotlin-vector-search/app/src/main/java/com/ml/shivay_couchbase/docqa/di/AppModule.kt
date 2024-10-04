@@ -1,10 +1,12 @@
 package com.ml.shivay_couchbase.docqa.di
 
 import android.app.Application
+import android.content.Context
 import com.ml.shivay_couchbase.docqa.data.ChunksDB
 import com.ml.shivay_couchbase.docqa.data.DocumentsDB
 import com.ml.shivay_couchbase.docqa.domain.embeddings.SentenceEmbeddingProvider
 import com.ml.shivay_couchbase.docqa.domain.llm.GeminiRemoteAPI
+import com.ml.shivay_couchbase.docqa.domain.llm.GemmaLocalLLM
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -37,6 +39,13 @@ object AppModule {
     fun provideGeminiRemoteAPI(): GeminiRemoteAPI {
         return GeminiRemoteAPI()
     }
+
+    @Provides
+    @Singleton
+    fun provideGemmaLocalLLM(context: Application): GemmaLocalLLM {
+        return GemmaLocalLLM(context)
+    }
+
 
     @Provides
     @Singleton

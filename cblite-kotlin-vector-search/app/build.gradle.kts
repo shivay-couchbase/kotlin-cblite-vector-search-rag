@@ -90,6 +90,9 @@ dependencies {
     // Gemini SDK - LLM
     implementation("com.google.ai.client.generativeai:generativeai:0.6.0")
 
+     // Mediapipe LLM Inference
+    implementation("com.google.mediapipe:tasks-genai:0.10.14")
+
     // compose-markdown
     // https://github.com/jeziellago/compose-markdown
     implementation("com.github.jeziellago:compose-markdown:0.5.0")
