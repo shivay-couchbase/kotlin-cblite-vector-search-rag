@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Doc-QA</string>
+    <string name="app_name">CBLite-Doc</string>
 
     <string name="prompt_1">
         You are an intelligent search engine. You will be provided with some retrieved context, as well as the users query.
